@@ -1,0 +1,24 @@
+# Java
+target/
+*.class
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Local env
+.env
+.env.local
+*.log
+tools/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# H2 local files
+*.mv.db
+*.trace.db
