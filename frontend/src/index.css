@@ -15,9 +15,9 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background:
-    linear-gradient(180deg, rgba(255, 248, 236, 0.96), rgba(250, 241, 228, 0.98)),
-    url("/assets/sushi-pattern.png");
-  background-size: auto, 520px;
+    radial-gradient(circle at 8% 12%, rgba(242, 87, 103, 0.12), transparent 26rem),
+    radial-gradient(circle at 86% 8%, rgba(46, 196, 182, 0.16), transparent 24rem),
+    linear-gradient(180deg, rgba(255, 248, 236, 0.98), rgba(250, 241, 228, 0.98));
 }
 
 button,

@@ -271,6 +271,8 @@ const formatCurrency = (value) =>
     currency: "BRL"
   }).format(value);
 
+const heroImageUrl = `${import.meta.env.BASE_URL}assets/sushi-hero.png`;
+
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
   const [query, setQuery] = useState("");
@@ -373,7 +375,7 @@ function App() {
           className="overflow-hidden rounded-lg bg-ink bg-cover bg-center text-white shadow-panel"
           style={{
             backgroundImage:
-              "linear-gradient(90deg, rgba(18,24,33,0.94) 0%, rgba(18,24,33,0.78) 40%, rgba(18,24,33,0.24) 100%), url('/assets/sushi-hero.png')"
+              `linear-gradient(90deg, rgba(18,24,33,0.94) 0%, rgba(18,24,33,0.78) 40%, rgba(18,24,33,0.24) 100%), url('${heroImageUrl}')`
           }}
         >
           <div className="grid min-h-[360px] content-between gap-8 p-5 sm:p-8 lg:grid-cols-[0.78fr_0.22fr] lg:p-10">

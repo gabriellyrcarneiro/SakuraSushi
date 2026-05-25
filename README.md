@@ -27,6 +27,8 @@ npm install
 npm run dev
 ```
 
+Com a base do GitHub Pages, o dev server abre em `http://localhost:5173/FixIt/`.
+
 Build de producao:
 
 ```bash
@@ -44,3 +46,10 @@ npm run preview
 ## Deploy
 
 O projeto esta pronto para deploy na Vercel. Use o diretorio `frontend` como raiz do projeto.
+
+Para GitHub Pages, gere o build com base `/FixIt/`:
+
+```bash
+cd frontend
+npm run build:pages
+```
