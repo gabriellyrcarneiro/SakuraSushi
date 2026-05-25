@@ -2,6 +2,8 @@
 
 Cardapio digital moderno para restaurante de sushi, construido com React, Vite e Tailwind CSS.
 
+# 👩‍💻 Feito por Gabrielly Rodrigues 
+
 ## Link publicado
 
 Abra o cardapio por este link, com a barra final:
