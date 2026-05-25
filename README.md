@@ -1,41 +1,25 @@
-# FixIt - Sistema de Suporte Tecnico com Chamados
+# Sakura Sushi - Cardapio Digital
 
-Projeto integrador fullstack para simular um ambiente de suporte tecnico com abertura, acompanhamento e atendimento de chamados.
+Cardapio digital moderno para restaurante de sushi, construido com React, Vite e Tailwind CSS.
 
 ## Funcionalidades
 
-- Cadastro e login com senha criptografada usando BCrypt.
-- Usuarios comuns podem criar e excluir seus chamados.
-- Tecnicos podem se autoatribuir a chamados e alterar o status.
-- Admins visualizam todos os chamados e podem atuar como suporte.
-- Controle de acesso por perfil: `USER`, `TECHNICIAN` e `ADMIN`.
-- Frontend responsivo em React consumindo API REST.
-- Banco H2 em memoria para facilitar testes locais.
+- Menu responsivo com visual premium.
+- Busca por item, categoria, tipo ou descricao.
+- Filtros por Sashimi, Nigiri, Uramaki, Hot Roll, Temaki, Combos, Promocoes, Clones e Bebidas.
+- Itens com valores, quantidades, tipos e descricoes.
+- Carrinho lateral com quantidade, subtotal, taxa e total.
+- Link de pedido via WhatsApp com resumo preenchido automaticamente.
+- Assets visuais locais para nao depender de imagens externas.
 
 ## Tecnologias
 
-- Backend: Java 17, Spring Boot, Spring Data JPA, H2, spring-security-crypto.
-- Frontend: React, Vite, Tailwind CSS.
-- Versionamento: Git e GitHub.
+- React
+- Vite
+- Tailwind CSS
+- Lucide React
 
 ## Como executar
-
-### Backend
-
-```bash
-cd backend
-mvn spring-boot:run
-```
-
-A API sobe em `http://localhost:8080`.
-
-Console H2: `http://localhost:8080/h2-console`
-
-- JDBC URL: `jdbc:h2:mem:fixitdb`
-- User: `sa`
-- Password: vazio
-
-### Frontend
 
 ```bash
 cd frontend
@@ -43,19 +27,20 @@ npm install
 npm run dev
 ```
 
-A interface sobe em `http://localhost:5173`.
+Build de producao:
 
-Para apontar o frontend para outro backend, crie `frontend/.env`:
-
-```env
-VITE_API_URL=http://localhost:8080/api
+```bash
+cd frontend
+npm run build
 ```
 
-## Usuarios de demonstracao
+Preview local:
 
-| Perfil | Email | Senha |
-| --- | --- | --- |
-| Usuario | `usuario@fixit.com` | `usuario123` |
-| Tecnico | `tecnico@fixit.com` | `tecnico123` |
-| Admin | `admin@fixit.com` | `admin123` |
+```bash
+cd frontend
+npm run preview
+```
 
+## Deploy
+
+O projeto esta pronto para deploy na Vercel. Use o diretorio `frontend` como raiz do projeto.
