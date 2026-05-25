@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  color: #172026;
-  background: #f6f8fb;
+  color: #121821;
+  background: #fbf7ef;
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
@@ -14,6 +14,10 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(255, 248, 236, 0.96), rgba(250, 241, 228, 0.98)),
+    url("/assets/sushi-pattern.png");
+  background-size: auto, 520px;
 }
 
 button,
@@ -26,4 +30,9 @@ textarea {
 button:disabled {
   cursor: not-allowed;
   opacity: 0.55;
+}
+
+::selection {
+  background: #f25767;
+  color: white;
 }
