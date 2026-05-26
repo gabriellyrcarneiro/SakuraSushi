@@ -6,8 +6,6 @@ Cardápio digital moderno para restaurante de sushi, construido com React, Vite 
 
 ## Link publicado
 
-Abra o cardapio por este link, com a barra final:
-
 https://gabriellyrcarneiro.github.io/SakuraSushi/
 
 ## Prints
